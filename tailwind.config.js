@@ -1,14 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 
 export default {
-  content:  [
-    './components/**/*.{html,js}',
+  content: [
+    "./components/**/*.{html,js}",
     "./src/**/*.{js,ts,jsx,tsx}",
-    './index.html',
+    "./index.html",
   ],
+  darkMode: "class",
   theme: {
     extend: {
-      colors:{
+      colors: {
         primary: "#ff8200",
         secondary: "#ed8900",
       },
@@ -18,12 +19,8 @@ export default {
           DEFAULT: "1rem",
           sm: "3rem",
         },
-      }
+      },
     },
   },
-  plugins: [ 
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ],
-}
-
+  plugins: [require("tailwindcss"), require("autoprefixer")],
+};
