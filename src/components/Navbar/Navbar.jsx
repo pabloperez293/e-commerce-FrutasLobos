@@ -31,20 +31,20 @@ const Menu = [
 const DropdownLinks = [
   {
     id: 1,
-    name : "Trending Products",
+    name: "Trending Products",
     link: "/#",
   },
   {
     id: 2,
-    name : "Best Selling",
+    name: "Best Selling",
     link: "/#",
   },
   {
     id: 3,
-    name : "Top Rated",
+    name: "Top Rated",
     link: "/#",
   },
-]
+];
 
 const Navbar = () => {
   return (
@@ -55,7 +55,7 @@ const Navbar = () => {
           <div>
             <a href='#' className='font-bold text-2xl sm:text-3xl flex gap-2'>
               <img src={Logo} alt='Logo' className='w-10' />
-              Tienda de frutas
+              Frutas
             </a>
           </div>
 
@@ -107,22 +107,24 @@ const Navbar = () => {
               {data.name}
             </a>
           </li>
-          <li className="group relative cursor-pointer">
+          <li className='group relative cursor-pointer'>
             <a href='#' className='flex items-center gap-{2px} py-2'>
               Trending Items
               <span>
                 <FaCaretDown className=' transition-all duration-200 group-hover:rotate-180' />
               </span>
             </a>
-            <div className="absolute z-[9999]  group-hover:block w-[150px] rounded-md bg-white p-2 text-black">
+            <div className='absolute z-[9999] hidden group-hover:block w-[150px] rounded-md bg-white p-2 text-black shadow-md'>
               <ul>
                 {DropdownLinks.map((data) => (
-                  <li key={data.id} >
-                  <a href={data.link}
-                  className="inline-block w-full rounded-md">{data.name}</a>
+                  <li key={data.id}>
+                    <a
+                      href={data.link}
+                      className='inline-block w-full rounded-md p-2 hover:bg-primary/10 '>
+                      {data.name}
+                    </a>
                   </li>
-                ))
-                }
+                ))}
               </ul>
             </div>
           </li>
