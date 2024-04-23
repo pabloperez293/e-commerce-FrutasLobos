@@ -12,7 +12,7 @@ const ProductsData = [
     img: Img1,
     title: "banana Ecuador",
     rating: 5.0,
-    author: "white",
+    author: "amarilla",
     aosDelay: "0",
   },
   {
@@ -20,7 +20,7 @@ const ProductsData = [
     img: Img2,
     title: "banana brasil",
     rating: 4.5,
-    author: "red",
+    author: "amarilla",
     aosDelay: "210",
   },
   {
@@ -28,7 +28,7 @@ const ProductsData = [
     img: Img3,
     title: "banana mexico",
     rating: 2.0,
-    author: "white",
+    author: "amarilla",
     aosDelay: "150",
   },
   {
@@ -36,7 +36,7 @@ const ProductsData = [
     img: Img4,
     title: "banana colombia",
     rating: 5.0,
-    author: "brown",
+    author: "verde",
     aosDelay: "350",
   },
   {
@@ -44,7 +44,7 @@ const ProductsData = [
     img: Img5,
     title: "banana brasil",
     rating: 5.0,
-    author: "Pink",
+    author: "amarilla",
     aosDelay: "110",
   },
 ];
@@ -80,7 +80,7 @@ const Products = () => {
                 />
                 <div>
                   <h3 className='font-semibold'>{data.title}</h3>
-                  <p className='text-sm text-gray-500'>{data.color}</p>
+                  <p className='text-sm text-gray-500'>{data.author}</p>
                   <div className='flex items-center gap-1'>
                     <FaStar className='text-yellow-400' />
                     <span>{data.rating}</span>
