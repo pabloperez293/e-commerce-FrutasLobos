@@ -22,7 +22,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
       <Navbar />
       <Hero />
       <Products />
