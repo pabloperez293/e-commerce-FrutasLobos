@@ -8,7 +8,7 @@ import TopProducts from "./components/TopProducts/TopProducts";
 import Banner from "./components/Banner/Banner";
 import Subscriber from "./components/Subscriber/subscribe";
 import Testimonials from "./components/Testimonials/Testimonials";
-
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   React.useEffect(() => {
@@ -31,6 +31,7 @@ const App = () => {
       <Subscriber />
       <Products />
       <Testimonials />
+      <Footer />
     </div>
   );
 };
