@@ -49,7 +49,7 @@ const ProductsData = [
   },
 ];
 
-const Products = () => {
+const Products = ( {handleOrderPopup}) => {
   return (
     <div className='mt-14 mb-12'>
       <div className='container'>
@@ -91,7 +91,7 @@ const Products = () => {
           </div>
           {/* ver todo  */}
           <div className="flex justify-center">
-            <button className="text-center mt-10 cursor-pointer bg-primary text-white px-5 py-1 rounded-md">Ver todo </button>
+            <button onClick={ handleOrderPopup } className="text-center mt-10 cursor-pointer bg-primary text-white px-5 py-1 rounded-md">Ver todo </button>
           </div>
         </div>
       </div>

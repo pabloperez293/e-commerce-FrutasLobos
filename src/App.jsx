@@ -30,12 +30,12 @@ const App = () => {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
       <Navbar handleOrderPopup={handleOrderPopup} />
-      <Hero />
+      <Hero handleOrderPopup={handleOrderPopup} />
       <Products />
-      <TopProducts />
+      <TopProducts handleOrderPopup={handleOrderPopup} />
       <Banner />
       <Subscriber />
-      <Products />
+      <Products  handleOrderPopup={handleOrderPopup}/>
       <Testimonials />
       <Footer />
       <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
